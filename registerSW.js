@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/vite-vanilla-template/sw.js', { scope: '/vite-vanilla-template/' })})}

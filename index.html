@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <script type="module"> is always `defer` -->
+    
+    
+
+    
+
+    <!-- everything below here is required for PWA-->
+    <!-- defualt output of vite-plugin-pwa -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <!-- TODO: use actual theme colors from tailwind-->
+    <meta name="theme-color" content="#FFFFFF" />
+    <!-- generate all below logos using https://realfavicongenerator.net/ -->
+    <!-- see: https://vite-pwa-org.netlify.app/guide/pwa-minimal-requirements.html -->
+    <link rel="icon" href="/vite-vanilla-template/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      href="/vite-vanilla-template/images/logo/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="mask-icon"
+      href="/vite-vanilla-template/images/logo/logo_512x512.png"
+      color="#FFFFFF"
+    />
+    <meta name="description" content="This is a test web app" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage" content="/mstile-150x150.png" />
+    <!-- needed for media queries -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <title data-i18n-key="title"></title>
+    <script type="module" crossorigin src="/vite-vanilla-template/assets/main-9dd14264.js"></script>
+    <link rel="stylesheet" href="/vite-vanilla-template/assets/index-442b08d3.css">
+  <link rel="manifest" href="/vite-vanilla-template/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/vite-vanilla-template/registerSW.js"></script></head>
+  <body class="flex flex-col items-center px-4 py-2 space-y-1">
+    <header class="w-full">
+      <form class="flex space-x-2">
+        <label
+          for="lang"
+          data-i18n-key="common.selectLanguage"
+          class="min-w-[100px]"
+        ></label>
+        <select id="lang-select" name="lang" class="min-w-[100px]">
+          <option value="en" data-i18n-key="common.otherLangs.en"></option>
+          <option value="zh" data-i18n-key="common.otherLangs.zh"></option>
+        </select>
+      </form>
+    </header>
+    <main class="w-full flex flex-col self-stretch">
+      <h1
+        class="self-center text-center space-y-1"
+        data-i18n-key="landing.h1"
+      ></h1>
+      <p class="text-base" data-i18n-key="landing.lorem"></p>
+    </main>
+  </body>
+</html>
