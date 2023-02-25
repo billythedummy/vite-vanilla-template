@@ -8,8 +8,11 @@
     <link href="css/index.css" rel="stylesheet" />
 
     <!-- everything below here is required for PWA-->
-    <!-- defualt output of vite-plugin-pwa -->
-    <link rel="manifest" href="/manifest.webmanifest" />
+    <!-- default output of vite-plugin-pwa -->
+
+    <!-- TODO: for some reason everything but manifest.webmanifest -->
+    <!-- has the root prefix correctly set at build time -->
+    <link rel="manifest" href="/vite-vanilla-template/manifest.webmanifest" />
     <!-- TODO: use actual theme colors from tailwind-->
     <meta name="theme-color" content="#FFFFFF" />
     <!-- generate all below logos using https://realfavicongenerator.net/ -->
