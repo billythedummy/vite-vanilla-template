@@ -1,6 +1,6 @@
 /** @type {import("tailwindcss").Config} */
 module.exports = {
-  // dont use overly-broad patterns like ./**/*.{js, css, html}
+  // dont use overly-broad patterns like ./**/*.{js,css,html}
   // since this has no exclude option
   content: ["./index.html", "./404.html", "./css/**/*.css", "./js/**/*.js"],
   plugins: [],
