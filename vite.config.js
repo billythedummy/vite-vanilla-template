@@ -7,11 +7,14 @@ import { VitePWA } from "vite-plugin-pwa";
 // import path from "path" causes eslint to crash for some reason
 const path = require("path");
 
+// TODO: this is to match github project pages being served under
+// user.github.io/<repo-name/*
+// delete when no longer using github pages
+const GH_PAGES_BASE = "/vite-vanilla-template/";
+
 export default defineConfig({
-  // TODO: this is to match github project pages being served under
-  // user.github.io/<repo-name/*
-  // delete when no longer using github pages
-  base: "/vite-vanilla-template/",
+  // TODO: github pages shenanigans
+  base: GH_PAGES_BASE,
   appType: "mpa",
   build: {
     // include source maps if env var set to true
@@ -31,30 +34,35 @@ export default defineConfig({
   },
   plugins: [
     VitePWA({
-      includeAssets: ["favicon.ico", "images/logo/apple-touch-icon.png"],
+      // TODO: github pages shenanigans, vitePWA doesnt do base substitution
+      includeAssets: [
+        `${GH_PAGES_BASE}favicon.ico`,
+        `${GH_PAGES_BASE}images/logo/apple-touch-icon.png`,
+      ],
       manifest: {
         name: "My Web App",
         short_name: "mwa",
         description: "This is a test web app",
+        //
         icons: [
           {
-            src: "/images/logo/logo_512x512.png",
+            src: `${GH_PAGES_BASE}images/logo/logo_512x512.png`,
             sizes: "512x512",
             type: "image/png",
           },
           {
-            src: "/images/logo/logo_192x192.png",
+            src: `${GH_PAGES_BASE}images/logo/logo_192x192.png`,
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "/images/logo/logo_192x192.png",
+            src: `${GH_PAGES_BASE}images/logo/logo_192x192.png`,
             sizes: "192x192",
             type: "image/png",
             purpose: "any maskable",
           },
         ],
-        start_url: "index.html",
+        start_url: `${GH_PAGES_BASE}index.html`,
         display: "fullscreen",
         // TODO: USE ACTUAL THEME COLORS
         theme_color: "#FFFFFF",
