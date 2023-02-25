@@ -8,6 +8,10 @@ import { VitePWA } from "vite-plugin-pwa";
 const path = require("path");
 
 export default defineConfig({
+  // TODO: this is to match github project pages being served under
+  // user.github.io/<repo-name/*
+  // delete when no longer using github pages
+  base: "/vite-vanilla-template/",
   appType: "mpa",
   build: {
     // include source maps if env var set to true

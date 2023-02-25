@@ -16,3 +16,8 @@ tools:
 
 - type-safety via jsdoc type annotations
 - [husky](https://github.com/typicode/husky) + [lint-staged](https://github.com/okonet/lint-staged) for [prettier](https://github.com/prettier/prettier) + [eslint](https://github.com/eslint/eslint) pre-commit hooks
+- github pages deploy
+
+## References:
+
+- [deploy github pages](https://github.com/sitek94/vite-deploy-demo)
