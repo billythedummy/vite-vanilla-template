@@ -4,7 +4,7 @@ import { loadUserLangOrDefault, onLangSelect } from "@/js/common/i18n";
 // @ts-ignore
 const LANG_SELECT = document.getElementById("lang-select");
 
-LANG_SELECT.value = loadUserLangOrDefault()[0];
+[LANG_SELECT.value] = loadUserLangOrDefault();
 
 LANG_SELECT.addEventListener(
   "change",

@@ -1,4 +1,4 @@
-import { indexDotStr } from "@/js/common/utils.js";
+import { indexDotStr } from "@/js/common/utils";
 
 const DATA_I18N_KEY = "data-i18n-key";
 const USER_LANG_KEY = "userLang";
@@ -25,7 +25,6 @@ async function setLang(lang) {
     } catch (e) {
       // need to catch since dot str might be undefined in the middle
       console.log("Error:", e, "Key:", key, "Lang:", lang);
-      return;
     }
   });
   document.documentElement.lang = lang;

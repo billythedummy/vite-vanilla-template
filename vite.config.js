@@ -1,5 +1,10 @@
+/* eslint-disable import/no-extraneous-dependencies */
+// silence `'vite' should be listed in project's dependencies, not devDependencies`
+
 import { defineConfig } from "vite";
-import path from "path";
+
+// import path from "path" causes eslint to crash for some reason 
+const path = require('path')
 
 export default defineConfig({
   appType: "mpa",

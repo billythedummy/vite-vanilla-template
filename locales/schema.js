@@ -27,5 +27,5 @@
  * @property {string} lorem the lorem ipsum page content
  */
 
-const _ThisMakesThisFileAModule = true;
-export default _ThisMakesThisFileAModule;
+const THIS_MAKES_THIS_FILE_A_MODULE = true;
+export default THIS_MAKES_THIS_FILE_A_MODULE;
