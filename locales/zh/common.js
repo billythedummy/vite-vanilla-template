@@ -6,7 +6,7 @@ const COMMON = {
   otherLangs: {
     en: "英语",
     zh: "中文",
-  }
-}
+  },
+};
 
 export default COMMON;

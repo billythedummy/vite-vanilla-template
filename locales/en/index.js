@@ -8,6 +8,6 @@ const LANG = {
   title: "My Web App",
   common: COMMON,
   landing: LANDING,
-}
+};
 
 export default LANG;

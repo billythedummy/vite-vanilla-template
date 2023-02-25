@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- <script type="module"> is always `defer` -->
-        <script type="module" src="js/common/i18n.js"></script>
-        <script type="module" src="js/index.js"></script>
+  <head>
+    <!-- <script type="module"> is always `defer` -->
+    <script type="module" src="js/common/i18n.js"></script>
+    <script type="module" src="js/index.js"></script>
 
-        <link href="css/index.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
 
-        <!-- important for media queries -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <!-- important for media queries -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
 
-        <title data-i18n-key="title"></title>
-    </head>
-    <body class="flex flex-col items-center px-4 py-2 space-y-1">
-        <header class="w-full">
-            <form class="flex space-x-2">
-                <label for="lang" data-i18n-key="common.selectLanguage" class="min-w-[100px]"></label>
-                <select id="lang-select" name="lang" class="min-w-[100px]">
-                    <option value="en" data-i18n-key="common.otherLangs.en"></option>
-                    <option value="zh" data-i18n-key="common.otherLangs.zh"></option>
-                </select>
-            </form>
-        </header>
-        <main class="w-full flex flex-col self-stretch">
-            <h1 class="self-center text-center space-y-1" data-i18n-key="landing.h1"></h1>
-            <p class="text-base" data-i18n-key="landing.lorem"></p>
-        </main>
-    </body>
+    <title data-i18n-key="title"></title>
+  </head>
+  <body class="flex flex-col items-center px-4 py-2 space-y-1">
+    <header class="w-full">
+      <form class="flex space-x-2">
+        <label
+          for="lang"
+          data-i18n-key="common.selectLanguage"
+          class="min-w-[100px]"
+        ></label>
+        <select id="lang-select" name="lang" class="min-w-[100px]">
+          <option value="en" data-i18n-key="common.otherLangs.en"></option>
+          <option value="zh" data-i18n-key="common.otherLangs.zh"></option>
+        </select>
+      </form>
+    </header>
+    <main class="w-full flex flex-col self-stretch">
+      <h1
+        class="self-center text-center space-y-1"
+        data-i18n-key="landing.h1"
+      ></h1>
+      <p class="text-base" data-i18n-key="landing.lorem"></p>
+    </main>
+  </body>
 </html>

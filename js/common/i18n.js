@@ -9,7 +9,7 @@ const DEFAULT_LANG = "en";
  * @param {string} lang the locale to set to, e.g. 'en'
  */
 async function setLang(lang) {
-  // must use relative ../ due to vite dynamic import limitation: 
+  // must use relative ../ due to vite dynamic import limitation:
   /** @type {import("@/locales/schema").I18nSchema} */
   const vals = (await import(`../../locales/${lang}/index.js`)).default;
   const elems = document.querySelectorAll(`[${DATA_I18N_KEY}]`);
@@ -39,7 +39,7 @@ function loadUserLang() {
 }
 
 /**
- * 
+ *
  * @param {string} lang the user locale to save
  */
 function saveUserLang(lang) {
@@ -47,7 +47,7 @@ function saveUserLang(lang) {
 }
 
 /**
- * 
+ *
  * @param {string} lang the newly selected lang
  */
 export function onLangSelect(lang) {

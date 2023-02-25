@@ -8,6 +8,6 @@ const LANG = {
   title: "我的网站",
   common: COMMON,
   landing: LANDING,
-}
+};
 
 export default LANG;
