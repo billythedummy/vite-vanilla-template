@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "paths": {
+      // to allow `import a from "@/js/a"` to work with IDE
+      "@/*": ["./*"] 
+    },
+    "checkJs": true
+  }
+}
