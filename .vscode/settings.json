@@ -29,6 +29,7 @@
     "editor.tabSize": 2
   },
   "[html]": {
-    "editor.tabSize": 4
+    // doesnt follow 4 convention but consistent with prettier
+    "editor.tabSize": 2
   }
 }
