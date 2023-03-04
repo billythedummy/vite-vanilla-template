@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- <script type="module"> is always `defer` -->
     <script type="module" src="/js/common/i18n.js"></script>
@@ -36,7 +36,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1"
     />
-    <title data-i18n-key="title"></title>
+    <title data-i18n-key="title">My Web App</title>
   </head>
   <body class="flex flex-col items-center px-4 py-2 space-y-1">
     <header class="w-full">
@@ -45,19 +45,31 @@
           for="lang"
           data-i18n-key="common.selectLanguage"
           class="min-w-[100px]"
-        ></label>
+          >select language</label
+        >
         <select id="lang-select" name="lang" class="min-w-[100px]">
-          <option value="en" data-i18n-key="common.otherLangs.en"></option>
-          <option value="zh" data-i18n-key="common.otherLangs.zh"></option>
+          <option value="en" data-i18n-key="common.otherLangs.en">
+            English
+          </option>
+          <option value="zh" data-i18n-key="common.otherLangs.zh">
+            Chinese
+          </option>
         </select>
       </form>
     </header>
     <main class="w-full flex flex-col self-stretch">
-      <h1
-        class="self-center text-center space-y-1"
-        data-i18n-key="landing.h1"
-      ></h1>
-      <p class="text-base" data-i18n-key="landing.lorem"></p>
+      <h1 class="self-center text-center space-y-1" data-i18n-key="landing.h1">
+        Hello World!
+      </h1>
+      <p class="text-base" data-i18n-key="landing.lorem">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
     </main>
   </body>
 </html>
