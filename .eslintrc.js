@@ -19,7 +19,8 @@ module.exports = {
       plugins: ["simple-import-sort"],
       extends: ["airbnb-base", "prettier"],
       parserOptions: {
-        ecmaVersion: "2020",
+        // support class field declarations
+        ecmaVersion: "2022",
         sourceType: "module",
       },
       settings: {
